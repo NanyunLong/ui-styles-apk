@@ -1,1 +1,17 @@
-cGx1Z2lucyB7CiAgICBpZCAnY29tLmFuZHJvaWQuYXBwbGljYXRpb24nCn0KCmFuZHJvaWQgewogICAgbmFtZXNwYWNlICdjb20uZXhhbXBsZS5zdHlsZXMnCiAgICBjb21waWxlU2RrIDM0CiAgICBidWlsZFRvb2xzVmVyc2lvbiAnMzUuMC4wJwoKICAgIGRlZmF1bHRDb25maWcgewogICAgICAgIGFwcGxpY2F0aW9uSWQgJ2NvbS5leGFtcGxlLnN0eWxlcycKICAgICAgICBtaW5TZGsgMjMKICAgICAgICB0YXJnZXRTZGsgMzQKICAgICAgICB2ZXJzaW9uQ29kZSAxCiAgICAgICAgdmVyc2lvbk5hbWUgJzEuMCcKICAgIH0KfQo=
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.styles'
+    compileSdk 34
+    buildToolsVersion '35.0.0'
+
+    defaultConfig {
+        applicationId 'com.example.styles'
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+}

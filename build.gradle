@@ -1,5 +1,3 @@
-rootProject.buildFileName = 'build.gradle'
-
 buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:8.9.0'

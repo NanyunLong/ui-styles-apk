@@ -1,1 +1,23 @@
-cGFja2FnZSBjb20uZXhhbXBsZS5zdHlsZXM7CgppbXBvcnQgYW5kcm9pZC5vcy5CdW5kbGU7CmltcG9ydCBhbmRyb2lkLndlYmtpdC5XZWJWaWV3OwppbXBvcnQgYW5kcm9pZC53ZWJraXQuV2ViU2V0dGluZ3M7CmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFwcENvbXBhdEFjdGl2aXR5OwoKcHVibGljIGNsYXNzIE1haW5BY3Rpdml0eSBleHRlbmRzIEFwcENvbXBhdEFjdGl2aXR5IHsKICAgIEBPdmVycmlkZQogICAgcHJvdGVjdGVkIHZvaWQgb25DcmVhdGUoQnVuZGxlIHNhdmVkSW5zdGFuY2VTdGF0ZSkgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZSk7CiAgICAgICAgV2ViVmlldyB3ZWJWaWV3ID0gbmV3IFdlYlZpZXcodGhpcyk7CiAgICAgICAgc2V0Q29udGVudFZpZXcod2ViVmlldyk7CgogICAgICAgIFdlYlNldHRpbmdzIHNldHRpbmdzID0gd2ViVmlldy5nZXRTZXR0aW5ncygpOwogICAgICAgIHNldHRpbmdzLnNldEphdmFTY3JpcHRFbmFibGVkKHRydWUpOwogICAgICAgIHNldHRpbmdzLnNldERvbVN0b3JhZ2VFbmFibGVkKHRydWUpOwogICAgICAgIHNldHRpbmdzLnNldExvYWRXaXRoT3ZlcnZpZXdNb2RlKHRydWUpOwogICAgICAgIHNldHRpbmdzLnNldFVzZVdpZGVWaWV3UG9ydCh0cnVlKTsKCiAgICAgICAgd2ViVmlldy5sb2FkVXJsKCJmaWxlOi8vL2FuZHJvaWRfYXNzZXQvaW5kZXguaHRtbCIpOwogICAgfQp9Cg==
+package com.example.styles;
+
+import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebSettings;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        WebView webView = new WebView(this);
+        setContentView(webView);
+
+        WebSettings settings = webView.getSettings();
+        settings.setJavaScriptEnabled(true);
+        settings.setDomStorageEnabled(true);
+        settings.setLoadWithOverviewMode(true);
+        settings.setUseWideViewPort(true);
+
+        webView.loadUrl("file:///android_asset/index.html");
+    }
+}

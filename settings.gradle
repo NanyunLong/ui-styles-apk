@@ -1,1 +1,2 @@
-cm9vdFByb2plY3QubmFtZSA9ICd1aS1zdHlsZXMtYXBrJwppbmNsdWRlICc6YXBwJwo=
+rootProject.name = 'ui-styles-apk'
+include ':app'
